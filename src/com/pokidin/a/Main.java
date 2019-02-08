@@ -6,13 +6,9 @@ import com.pokidin.a.controllers.ControllerImpl;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(args);
 
-        String arg = "24";
-        IpFilter.Controller controller;
-        controller = new ControllerImpl();
+        IpFilter.Controller controller = new ControllerImpl();
         String inputString = args[0];
-        System.out.println("inputString: " + inputString);
-        controller.compareIp(inputString);
+        controller.checkIp(inputString);
     }
 }

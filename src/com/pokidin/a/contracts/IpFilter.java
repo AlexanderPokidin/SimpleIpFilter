@@ -4,15 +4,15 @@ import java.util.List;
 
 public interface IpFilter {
 
-    interface Model{
-        List<String> getBlackIp();
+    interface Model {
+        List<String> getBlackIps();
     }
 
-    interface View{
-        void printResult(String response);
+    interface View {
+        void showAccess(String access);
     }
 
-    interface Controller{
-        void compareIp(String args);
+    interface Controller {
+        void checkIp(String args);
     }
 }

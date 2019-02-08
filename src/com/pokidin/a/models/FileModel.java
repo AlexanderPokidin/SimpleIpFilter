@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ModelImpl implements IpFilter.Model {
+public class FileModel implements IpFilter.Model {
 
     @Override
-    public List<String> getBlackIp() {
+    public List<String> getBlackIps() {
         List<String> blackLists = new ArrayList<>();
         try {
             FileReader reader = new FileReader("BlackIpList");
